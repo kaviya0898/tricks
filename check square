@@ -1,0 +1,22 @@
+public static void main(String[] args) {
+	
+	int number=34;
+	
+	System.out.println(findSquare(number));
+	 
+	}
+
+	private static boolean findSquare(int number) {
+		
+		int sqrt=0;
+		
+		while(sqrt*sqrt<=number)
+		{
+			if(sqrt*sqrt==number)
+			{
+				return true;
+			}
+			sqrt++;
+		}
+		return false;
+	}
